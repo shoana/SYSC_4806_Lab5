@@ -11,23 +11,25 @@ public class BuddyInfo {
     private Integer id;
     private String name;
     private String phoneNumber;
+    private String address;
 
     @ManyToOne
-    @JoinColumn(name = "addressbookId")
     private AddressBook addressBook;
 
-    protected BuddyInfo(){
-        this(null, null);
-    }
 
-    public BuddyInfo(String name, String phoneNumber) {
+    public BuddyInfo(String name, String phoneNumber, String address) {
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
 
     public BuddyInfo(String name){
-        this(name, null);
+        this(name, null, null);
+    }
+
+    public BuddyInfo() {
+
     }
 
 
@@ -55,6 +57,10 @@ public class BuddyInfo {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public String getAddress(){return address;}
+
+    public void setAddress(String address){this.address = address;}
 
     @Override
     public String toString() {
