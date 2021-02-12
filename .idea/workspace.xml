@@ -51,19 +51,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SmokeTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SYSC-4806-Lab-5-master" />
       <extension name="coverage">
@@ -105,6 +92,13 @@
       <option name="PACKAGE_NAME" value="addressbook" />
       <option name="MAIN_CLASS_NAME" value="addressbook.SmokeTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SYSC4806-Lab3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="addressbook.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
