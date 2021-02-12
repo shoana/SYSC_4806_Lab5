@@ -6,8 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @Controller
 public class MainController {
 
@@ -18,7 +16,7 @@ public class MainController {
     public String index(Model model) {
         AddressBook book = new AddressBook(new Long(1));
         model.addAttribute("addressbook", book);
-        model.addAttribute("newBuddy", new BuddyInfo());
+        model.addAttribute("newBuddy", new BuddyInfo("Shoana", "48392658234", "234 khdfkw 324"));
         return "addressbook";
     }
 
@@ -30,7 +28,7 @@ public class MainController {
         repository.save(book);
 
         model.addAttribute("addressbook", book);
-        model.addAttribute("newBuddy", new BuddyInfo());
+        model.addAttribute("newBuddy", new BuddyInfo("Shoana", "48392658234", "234 khdfkw 324"));
         return "addressbook";
     }
 }
