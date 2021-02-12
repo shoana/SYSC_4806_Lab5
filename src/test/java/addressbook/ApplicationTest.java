@@ -43,7 +43,11 @@ public class ApplicationTest {
         this.mockMvc.perform(get(url))
                 .andDo(print())
                 .andExpect(status().isOk())
+<<<<<<< HEAD
                 .andExpect(content().contentType("application/hal+json;"))
+=======
+                .andExpect(content().contentType("application/hal+json;charset=UTF-8"))
+>>>>>>> 325dcb25888ce9cd57bcb8ba9b2ed2b6795fa473
                 .andExpect(jsonPath("_embedded.addressbook", hasSize(0)));
 
     }
